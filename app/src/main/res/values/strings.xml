@@ -3,4 +3,5 @@
     <string name="second_activity">Second Activity</string>
     <string name="by_url">By URL</string>
     <string name="start_pendingintent">Start PendingIntent</string>
+    <string name="myreceiver">ThreeActivity</string>
 </resources>

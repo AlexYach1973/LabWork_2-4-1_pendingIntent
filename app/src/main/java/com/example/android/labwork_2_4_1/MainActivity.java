@@ -24,11 +24,12 @@ public class MainActivity extends AppCompatActivity {
         byUrl = findViewById(R.id.btnByUrl);
         pendingIntent = findViewById(R.id.btnPending);
 
-        // Second Activity
+        // Second Activity LabWork 2-4-2
         secondAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("Key", "Сообщение из MainActivity");
                 startActivity(intent);
             }
         });
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()
                         + (seconds * 1000), pendingIntent);
 
-                Toast.makeText(MainActivity.this, "Старт Second Activity через " + seconds +
+                Toast.makeText(MainActivity.this, "Старт Three Activity через " + seconds +
                         " секунд", Toast.LENGTH_LONG).show();
 
 

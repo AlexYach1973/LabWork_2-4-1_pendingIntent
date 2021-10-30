@@ -11,7 +11,7 @@ public class MyReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        Intent intent1 = new Intent(context, SecondActivity.class);
+        Intent intent1 = new Intent(context, ThreeActivity.class);
         context.startActivity(intent1);
 
     }
